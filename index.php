@@ -12,6 +12,7 @@ include("koneksi.php");
             <th>NIM</th>
             <th>NAMA</th>
             <th>KELAS</th>
+            <th>OPSI</th>
         </tr>
     </thead>
     <tbody>
