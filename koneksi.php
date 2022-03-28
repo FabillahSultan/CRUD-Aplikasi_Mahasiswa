@@ -1,12 +1,14 @@
 <?php
-$conn_string = "host=satao.db.elephantsql.com port=5432 " . 
-    "dbname=uyofpqwo user=uyofpqwo " .
-    "password=6VNPD_jVamIc0t2P0stywGEY7RzGs1VU";
-$conn = pg_connect($conn_string);
+$conn_str = "host=john.db.elephantsql.com " .
+    "port=5432 " .
+    "user=uyofpqwo " .
+    "dbname=uyofpqwo " .
+    "password=6VNPD_jVamIc0t2P0stywGEY7RzGs1VU ";
+$conn = pg_connect($conn_str);
 
 if($conn) {
-    echo "Koneksi DB Tersambung";
+    echo "<h3>Koneksi Berhasil</h3>";
 } else {
-    echo "Koneksi DB GAGAL";
+    echo "<h3>Koneksi GAGAL TERSAMBUNG</h3>";
 }
 ?>
